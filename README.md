@@ -1,130 +1,27 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9680293&assignment_repo_type=AssignmentRepo)
-# Graded Challenge 1
-
-_Graded Challenge ini dibuat guna mengevaluasi pembelajaran pada Hacktiv8 Data Science Fulltime Program khususnya pada konsep Regression._
+# Retail Customer Segmentation
 
 ---
 
-## Dataset Description
+## Dataset
 
-Unduh dataset yang akan digunakan [disini](https://www.kaggle.com/brllrb/uber-and-lyft-dataset-boston-ma).
+Dataset yang dimaksud adalah "Uber and Lyft Dataset - Boston, MA" yang tersedia di platform [Kaggle](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma). Dataset ini berisi data perjalanan dari layanan transportasi Uber dan Lyft di kota Boston, Massachusetts.
 
-## Assignment Instructions
+Berikut adalah deskripsi atribut yang terdapat dalam dataset ini:
 
-*Graded Challenge 1* dikerjakan dalam format ***notebook*** dengen beberapa **kriteria wajib** di bawah ini:
+1. origin_taz: Zona awal perjalanan (dalam format angka).
+2. destination_taz: Zona tujuan perjalanan (dalam format angka).
+3. pickup_datetime: Waktu dan tanggal penjemputan perjalanan.
+4. pickup_latitude: Koordinat lintang penjemputan.
+5. pickup_longitude: Koordinat bujur penjemputan.
+6. dropoff_latitude: Koordinat lintang tujuan.
+7. dropoff_longitude: Koordinat bujur tujuan.
+8. distance_miles: Jarak perjalanan dalam mil.
+9. trip_duration_seconds: Durasi perjalanan dalam detik.
+10. company: Nama perusahaan layanan transportasi (Uber atau Lyft).
 
-1. Machine learning framework yang digunakan adalah *Scikit-Learn*.
+Dataset ini dapat digunakan untuk melakukan analisis terkait transportasi dan pergerakan di kota Boston. Dengan menggunakan informasi seperti zona awal dan tujuan perjalanan, waktu penjemputan, jarak, dan durasi perjalanan, dapat dilakukan analisis pergerakan, pemodelan prediktif terkait permintaan transportasi, pemetaan pola perjalanan, dan penentuan faktor-faktor yang mempengaruhi waktu dan jarak perjalanan.
+Dataset ini memberikan wawasan tentang tren perjalanan dan karakteristik pengguna layanan Uber dan Lyft di kota Boston, serta memberikan dasar untuk pengembangan solusi transportasi yang lebih efisien dan peningkatan pengalaman pengguna dalam perjalanan.
 
-2. Ada penggunaan library visualisasi, seperti *matplotlib*, *seaborn*, atau yang lain.
+## Objective
 
-3. Isi *notebook* harus mengikuti *outline* di bawah ini:
-   1. Perkenalan
-      > Bab pengenalan harus diisi dengan identitas, gambaran besar dataset yang digunakan, dan *objective* yang ingin dicapai.
-   
-   2. Import Libraries
-      > *Cell* pertama pada *notebook* **harus berisi dan hanya berisi** semua *library* yang digunakan dalam *project*.
-   
-   3. Data Loading
-      > Bagian ini berisi proses penyiapan data sebelum dilakukan eksplorasi data lebih lanjut. Proses Data Loading dapat berupa memberi nama baru untuk setiap kolom, mengecek ukuran dataset, dll.
-   
-   4. Exploratory Data Analysis (EDA)
-      > Bagian ini berisi eksplorasi data pada dataset diatas dengan menggunakan query, grouping, visualisasi sederhana, dan lain sebagainya.
-   
-   5. Feature Engineering
-      > Bagian ini berisi proses penyiapan data untuk proses pelatihan model, seperti pembagian data menjadi train-dev-test, transformasi data (normalisasi, encoding, dll.), dan proses-proses lain yang dibutuhkan.
-
-   6. Model Definition
-      > Bagian ini berisi cell untuk mendefinisikan model. Jelaskan alasan menggunakan suatu algoritma/model, hyperparameter yang dipakai, jenis penggunaan metrics yang dipakai, dan hal lain yang terkait dengan model.
-
-   7. Model Training
-      > Cell pada bagian ini hanya berisi code untuk melatih model dan output yang dihasilkan. Lakukan beberapa kali proses training dengan hyperparameter yang berbeda untuk melihat hasil yang didapatkan. Analisis dan narasikan hasil ini pada bagian Model Evaluation.
-   
-   8. Model Evaluation
-      > Pada bagian ini, dilakukan evaluasi model yang harus menunjukkan bagaimana performa model berdasarkan metrics yang dipilih. Hal ini harus dibuktikan dengan visualisasi tren performa dan/atau tingkat kesalahan model. **Lakukan analisis terkait dengan hasil pada model dan tuliskan hasil analisisnya**.
-
-   9. Model Inference
-      > Model yang sudah dilatih akan dicoba pada data yang bukan termasuk ke dalam train-set ataupun test-set. Data ini harus dalam format yang asli, bukan data yang sudah di-scaled.
-   
-   10. Pengambilan Kesimpulan
-       > Pada bagian terakhir ini, **harus berisi** kesimpulan yang mencerminkan hasil yang didapat dengan *objective* yang sudah ditulis di bagian pengenalan.
-    
-5. *Notebook* harus diupload dalam akun GitHub masing-masing siswa untuk selanjutnya dinilai.
-
-## Assignment Submission
-
-- Simpan assignment pada sesi ini dengan nama `h8dsft_P1G1_<nama-student>.ipynb` misal `h8dsft_P1G1_raka_ardhi.ipynb`.
-- Push Assigment yang telah kalian buat ke akun Github kalian masing-masing.
-
-## Assignment Objectives
-
-*Graded Challenge 1* ini dibuat guna mengevaluasi konsep Regression sebagai berikut:
-
-- Mampu memahami konsep regression dengan Linear Regression.
-- Mampu mempersiapkan data untuk digunakan dalam model Linear Regression.
-- Mampu mengimplementasikan Linear Regression untuk membuat prediksi.
-
-## Problems
-
-Buatlah model Regression menggunakan Linear Regression untuk memprediksi harga perjalanan platform ride-hailing dengan dataset yang disediakan.
-
-## Conceptual Problems
-
-_Jawab pertanyaan berikut:_
-
-1. Sebutkan dan jelaskan asumsi yang dipakai oleh Linear Regression !
-2. Tunjukkan dan tafsirkan arti dari coefficient dan slope yang didapat dari model yang telah Anda bangun !
-
-## Assignment Rubrics
-
-### Code Review
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Feature Engineering | Mampu melakukan preprocessing dataset sebelum melakukan proses modeling (split data, normalisasi, encoding, dll) | 35 pts |
-| Linear Regression | Mengimplementasikan Linear Regression dan menentukan hyperparameter yang tepat dengan Scikit-Learn | 10 pts |
-| Model Inference | Mencoba model yang telah dibuat dengan data baru | 10 pts |
-| Runs Perfectly | Kode berjalan tanpa ada error. Seluruh kode berfungsi dan dibuat dengan benar | 10 pts |
-
-### Concepts
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Regression | Mampu menjawab pertanyaan dengan singkat, jelas, dan padat serta sesuai dengan konsep dan logika yang ada mengenai Conceptual Problems (15 each number) | 30 pts |
-
-### Readability
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Tertata Dengan Baik | Semua baris kode terdokumentasi dengan baik dengan Markdown untuk penjelasan kode | 15 pts |
-
-```
-Kriteria tertata dengan baik diantaranya adalah: 
-
-1. Terdapat section Perkenalan yang jelas.
-2. Tidak menyalin markdown dari tugas lain.
-3. Import library rapih (terdapat dalam 1 cell dan tidak ada unused libs).
-4. Pemakaian fungsi markdown yang optimal (Heading, text formating, dll).
-5. Terdapat komentar pada setiap baris kode.
-6. Adanya pemisah yang jelas antar section, dll.
-```
-
-### Analysis
-
-| Criteria | Meet Expectations | Points|
-| --- | --- | --- |
-| Model Analysis | Menganalisa informasi dari model yang telah dibuat | 35 pts |
-| Overall Analysis | Menarik informasi/kesimpulan dari keseluruhan kegiatan yang dilakukan | 20 pts |
-
----
-
-```
-Total Points : 165
-```
-
----
-
-## Notes
-
-* **Deadline : P1W2D1 pukul 23:59 WIB.**
-
-* **Keterlambatan pengumpulan tugas mengakibatkan skor GC 1 menjadi 0.**
+Tujuan dari analisis menggunakan dataset "Uber and Lyft Dataset - Boston, MA" adalah untuk mengembangkan model regresi menggunakan metode Linear Regression guna memprediksi harga perjalanan pada platform ride-hailing. Dengan menggunakan informasi yang terdapat dalam dataset, seperti atribut penjemputan dan tujuan perjalanan, waktu penjemputan, jarak perjalanan, serta data harga yang ada, tujuannya adalah untuk membangun model prediktif yang dapat memberikan perkiraan harga yang akurat berdasarkan faktor-faktor tersebut.
