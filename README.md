@@ -1,27 +1,54 @@
-# Retail Customer Segmentation
+# Price Prediction for Uber and Lyft
 
 ---
 
-## Dataset
+Welcome to the Price Prediction for Uber and Lyft repository! This repository contains code, data, and resources related to the price prediction models for rideshare services like Uber and Lyft. The goal of this project is to develop machine learning models that can accurately predict the prices of rides based on various factors.
 
-Dataset yang dimaksud adalah "Uber and Lyft Dataset - Boston, MA" yang tersedia di platform [Kaggle](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma). Dataset ini berisi data perjalanan dari layanan transportasi Uber dan Lyft di kota Boston, Massachusetts.
+## Table of Contents
 
-Berikut adalah deskripsi atribut yang terdapat dalam dataset ini:
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
 
-1. origin_taz: Zona awal perjalanan (dalam format angka).
-2. destination_taz: Zona tujuan perjalanan (dalam format angka).
-3. pickup_datetime: Waktu dan tanggal penjemputan perjalanan.
-4. pickup_latitude: Koordinat lintang penjemputan.
-5. pickup_longitude: Koordinat bujur penjemputan.
-6. dropoff_latitude: Koordinat lintang tujuan.
-7. dropoff_longitude: Koordinat bujur tujuan.
-8. distance_miles: Jarak perjalanan dalam mil.
-9. trip_duration_seconds: Durasi perjalanan dalam detik.
-10. company: Nama perusahaan layanan transportasi (Uber atau Lyft).
+## Project Overview
 
-Dataset ini dapat digunakan untuk melakukan analisis terkait transportasi dan pergerakan di kota Boston. Dengan menggunakan informasi seperti zona awal dan tujuan perjalanan, waktu penjemputan, jarak, dan durasi perjalanan, dapat dilakukan analisis pergerakan, pemodelan prediktif terkait permintaan transportasi, pemetaan pola perjalanan, dan penentuan faktor-faktor yang mempengaruhi waktu dan jarak perjalanan.
-Dataset ini memberikan wawasan tentang tren perjalanan dan karakteristik pengguna layanan Uber dan Lyft di kota Boston, serta memberikan dasar untuk pengembangan solusi transportasi yang lebih efisien dan peningkatan pengalaman pengguna dalam perjalanan.
+In this project, we aim to build predictive models that estimate the prices for Uber and Lyft rides. The models take into account several factors such as distance, time of day, weather conditions, and surge pricing to provide accurate price predictions. By leveraging historical data and machine learning algorithms, we can develop models that help users estimate the cost of their rides in advance.
 
-## Objective
+The repository contains the following components:
 
-Tujuan dari analisis menggunakan dataset "Uber and Lyft Dataset - Boston, MA" adalah untuk mengembangkan model regresi menggunakan metode Linear Regression guna memprediksi harga perjalanan pada platform ride-hailing. Dengan menggunakan informasi yang terdapat dalam dataset, seperti atribut penjemputan dan tujuan perjalanan, waktu penjemputan, jarak perjalanan, serta data harga yang ada, tujuannya adalah untuk membangun model prediktif yang dapat memberikan perkiraan harga yang akurat berdasarkan faktor-faktor tersebut.
+1. **Data**: This directory holds the dataset used for training and evaluating the models. It may include historical ride data, weather data, and other relevant information.
+
+2. **Notebooks**: This directory contains Jupyter notebooks that demonstrate the data preprocessing, model training, evaluation, and visualization steps. The notebooks provide a step-by-step guide to understanding the price prediction process.
+
+3. **Models**: This directory stores the trained machine learning models. It includes saved model files or scripts necessary for model deployment and inference.
+
+4. **Documentation**: This directory contains additional documentation, such as data dictionaries, explanations of model features, and any other relevant information.
+
+## Installation
+To set up the project locally, follow these steps:
+
+1. Clone the repository to your local machine using the following command:
+```
+git clone https://github.com/salmanfaishal27/Price_prediction_Uber-lyft.git
+```
+2. Install the required dependencies. The dependencies for each project may vary, so it is recommended to refer to the respective project's documentation for detailed installation instructions.
+
+## Usage
+To use the price prediction models, follow the instructions below:
+
+1. Navigate to the **Notebooks** directory and open the Jupyter notebooks in a suitable environment.
+
+2. Follow the instructions provided within the notebooks to preprocess the data, train the models, and evaluate their performance.
+
+3. Once the models are trained and evaluated, you can use them to make predictions on new data or deploy them as part of a larger application or service.
+
+Please note that the specific usage instructions may vary depending on the project structure and the contents of the repository. Make sure to read the documentation and comments within the code for detailed instructions.
+
+## Contributing
+Contributions to this repository are welcome! If you have any improvements, bug fixes, or new projects to add, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your contribution.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your forked repository.
