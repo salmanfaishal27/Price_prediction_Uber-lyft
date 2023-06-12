@@ -6,6 +6,7 @@ Welcome to the Price Prediction for Uber and Lyft repository! This repository co
 
 ## Table of Contents
 
+- [Dataset](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma)
 - [Project Overview](#project-overview)
 - [Installation](#installation)
 - [Usage](#usage)
