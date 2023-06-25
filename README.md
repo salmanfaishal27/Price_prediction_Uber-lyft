@@ -21,11 +21,3 @@ The repository contains the following components:
 3. **Models**: This directory stores the trained machine learning models. It includes saved model files or scripts necessary for model deployment and inference.
 
 4. **Documentation**: This directory contains additional documentation, such as data dictionaries, explanations of model features, and any other relevant information.
-
-## Contributing
-Contributions to this repository are welcome! If you have any improvements, bug fixes, or new projects to add, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your contribution.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your forked repository.
