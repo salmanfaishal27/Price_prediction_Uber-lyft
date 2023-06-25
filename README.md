@@ -4,13 +4,9 @@
 
 Welcome to the Price Prediction for Uber and Lyft repository! This repository contains code, data, and resources related to the price prediction models for rideshare services like Uber and Lyft. The goal of this project is to develop machine learning models that can accurately predict the prices of rides based on various factors.
 
-## Table of Contents
+## Dataset
 
-- [Dataset](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma)
-- [Project Overview](#project-overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+Dataset ini berisi informasi tentang perjalanan Uber dan Lyft di Boston, MA dari 26 November 2018 hingga 18 Desember 2018. Dataset ini dapat digunakan untuk mempelajari tren harga antara Uber dan Lyft menggunakan model regresi linear. Namun, dataset ini mengandung banyak nilai NA, dataset ini didapatkan dari [kaggle](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma)
 
 ## Project Overview
 
