@@ -6,7 +6,7 @@ Welcome to the Price Prediction for Uber and Lyft repository! This repository co
 
 ## Dataset
 
-Dataset ini berisi informasi tentang perjalanan Uber dan Lyft di Boston, MA dari 26 November 2018 hingga 18 Desember 2018. Dataset ini dapat digunakan untuk mempelajari tren harga antara Uber dan Lyft menggunakan model regresi linear. Namun, dataset ini mengandung banyak nilai NA, dataset ini didapatkan dari [kaggle](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma)
+This dataset contains information about Uber and Lyft trips in Boston, MA from November 26, 2018, to December 18, 2018. The dataset can be used to study price trends between Uber and Lyft using a linear regression model. However, this dataset contains many missing values (NA). The dataset was obtained from [kaggle](https://www.kaggle.com/datasets/brllrb/uber-and-lyft-dataset-boston-ma)
 
 ## Project Overview
 
