@@ -22,26 +22,6 @@ The repository contains the following components:
 
 4. **Documentation**: This directory contains additional documentation, such as data dictionaries, explanations of model features, and any other relevant information.
 
-## Installation
-To set up the project locally, follow these steps:
-
-1. Clone the repository to your local machine using the following command:
-```
-git clone https://github.com/salmanfaishal27/Price_prediction_Uber-lyft.git
-```
-2. Install the required dependencies. The dependencies for each project may vary, so it is recommended to refer to the respective project's documentation for detailed installation instructions.
-
-## Usage
-To use the price prediction models, follow the instructions below:
-
-1. Navigate to the **Notebooks** directory and open the Jupyter notebooks in a suitable environment.
-
-2. Follow the instructions provided within the notebooks to preprocess the data, train the models, and evaluate their performance.
-
-3. Once the models are trained and evaluated, you can use them to make predictions on new data or deploy them as part of a larger application or service.
-
-Please note that the specific usage instructions may vary depending on the project structure and the contents of the repository. Make sure to read the documentation and comments within the code for detailed instructions.
-
 ## Contributing
 Contributions to this repository are welcome! If you have any improvements, bug fixes, or new projects to add, please follow these steps:
 
